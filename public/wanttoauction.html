@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/ash.css">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header><a href="#" class="logo"> <img class="logo-img" src="./images/auction_2.png"></a>
+      <ul class="navigation">
+          <li><a href="./howItWorks">How it works?</a></li>
+          <li><a href="/exploreauction">Explore Auctions</a></li>
+          <li><a href="/wanttoauction">Want to Auction?</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li> 
+      </ul>
+      <div class="search">
+          <input type="text"  placeholder="Search our Inventory" /> <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+  </header>
+    <div class="main1">
+      <div class="top">
+
+        <a href="#" style="text-decoration: none">Home</a>
+        /<a href="#" style="text-decoration: none"
+          >Auctions by product</a
+        >
+      </div>
+      <div class="bottom">
+      <form action="/wanttoauction" method="post" enctype="multipart/form-data">
+    
+        <div class="bottom1">
+          <p>Auctions By Product</p>
+        </div>
+        <div class="bottombot">
+          <div class="botcon">
+            <div class="first">
+              <p>Product Name</p>
+              <input type="text" id="cha" placeholder ="Product Name" name="username">      
+                      <input type="file" name="filename">
+
+            </div>
+            <div class="middle">
+              <p>Starts From</p>
+              <input type="text"  id="start"  name="start" placeholder="DD-Jan-YYYY 00:00:00" />
+            </div>
+            <div class="end">
+              <p>Ends</p>
+              <input type="text" id="end" name = "end" placeholder="DD-Jan-YYYY 00:00:00" >
+            </div>
+          </div>
+        </div>
+        <div class="middlebot">
+          <div class="left">
+            <p>Enter small description of the product</p>
+            <input type="text"  class = "desp" name="desp">
+          </div>
+          <div class="right">
+            <div class="rightleft">
+              <p>Base Price:</p>
+              <input
+                type="text"
+                id="base_p"
+                style="background-image: none"
+                 name="base_price"
+                placeholder="$0">
+            
+            </div>
+           
+          </div>
+          
+        </div>
+        <div class="rightright">
+          <input type="submit" name="submit" id="subbt" />
+        </div>
+
+      </form>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="section aboutUs">
+            <h2> About us</h2>
+            <p>Lorem ipsum dolor sit amet consectet</p>
+            <ul class="socialSites">
+                <li><a href=""><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="section quickLinks">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="section Auctions">
+            <h2>Bid on..</h2>
+            <ul>
+                <li><a href="">Antique Products</a></li>
+                <li><a href="">Vehicles</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Players</a></li>
+            </ul>
+        </div>
+        <div class="section contactUs">
+            <h2>Contact Us</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span>3-5-1026, Narayanguda Rd, Hari Vihar Colony, <br/>
+                        Bhawani Nagar, Narayanguda,<br/>
+                        Telangana 500029.</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <p><a href="tel:12345678">+91 12345678</a><br/>
+                    <a href="tel:12345678">+91 12345678</a></p>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mailto:helloworld@email.com">helloworld@email.com</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </footer>
+    <script src="./script/script1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/buyer.css">
+    <script>
+        var records;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+                    <img src = "./uploads/<%= records.img %>"  alt="uploaded image">
+                   <br>
+                   <!-- <p style="margin-bottom:3px; margin-left:90px;" id="1">Base_Price:$<%=records.amount%></p> -->
+                   <br>
+                   <!-- <br>
+                   <h3>Product-Description:</h3>
+                   <p style="font-family: cursive;font-size: medium;;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda omnis blanditiis, consectetur, praesentium explicabo rerum cumque expedita nobis ullam officia, iusto ad! Commodi soluta et sequi, dolor asperiores hic inventore.</p>
+                   -->
+        </div>
+        <div class="right">
+             <!-- <p style="margin-bottom:3px; margin-left:90px;" id="1">Base_Price:$<%=records.amount%></p> -->
+             <h2 style="font-family: sans-serif;font-size: 30px;">Product Name: <%=records.namei%></h2>
+             <p  id="1" style="font-weight: bolder;">Base_Price:  $<%=records.amount%></p>
+             <p style="font-weight: bolder;">Current-Bidd: $<%=records.min%></p>
+             <p>Description:  <%=records.descri%></p>
+             <br>
+          <form action="/buyer" method="post">
+            <p style="font-size: 16px;font-weight: bold;">Bidder Details<p>
+              <label for="username">User-Name:</label>
+              <br>
+              <input type="text" name="username" required>
+              <br>
+              <br>
+              <label>Email:</label>
+              <br>
+              <input type="text" name="email" required>
+              <br>
+              <br>
+              <label for="Bidding_price">Bidding-Price:</label>
+              <br>
+              <input type="text" name="biddprice" required>
+              <br>
+              <br>
+              <input type="submit" id = "sub">
+              <br>
+              <br>
+              
+              <!-- <img src="/images/Untitled.png" alt="ntg"> -->
+          </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

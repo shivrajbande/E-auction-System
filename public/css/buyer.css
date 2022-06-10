@@ -1,0 +1,59 @@
+head{
+    height:100%;
+    width:100%;
+}
+
+body{
+    height:100%;
+    width: 100%;
+    display: flex;
+    /*align container to center*/
+    justify-content: center;
+    align-items: center;
+    background-color: 	rgb(40,40,40);
+    
+    
+}
+.container{
+    height:48%;
+    width:72%;
+    display: flex;
+    margin-top:70px;
+    /*align children div to center */
+    justify-content: center;
+    align-items: center;
+   
+    padding:2px 2px;
+    background-color: white;
+    border-radius: 8px;
+    
+    
+   
+}
+
+.left{
+    width:60%;
+    height:480px;
+}
+.right{
+    width:40%;
+    height:100%;
+}
+img{
+    height:100%;
+    width:60%;
+    margin-left:20px;
+    /* margin-top: 15px;
+    margin-left: 40px; */
+   
+}
+.left form{
+    margin-top: 6px;
+
+}
+
+
+
+
+
+

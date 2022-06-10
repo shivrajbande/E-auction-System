@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>How it works</title>
+    <link rel="icon" href="/images/auctioner.png" type="image/png">       <!-- Setting the favicon-->
+    <!--Stylesheets..-->
+    <link href="../css/howItWorks-styles.css" rel="stylesheet" type="text/css">   <!--Custom Stylesheet-->
+    <link href="../css/header-styling.css" rel="stylesheet" type="text/css">
+    <link href="../https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <form action="/howitWorks">
+    <!-- Heading content-->
+    <header id="header">
+        <a href="#" class="logo"> <img class="logo-img" src="../images/auction_2.png"></a>
+        <ul class="navigation">
+            <li><a href="/home">Home</a></li>
+            <li><a href="#WhoWeAre">Who we are?</a></li>
+            <li><a href="#procedure">Procedure</a></li>
+            <li><a href="#connecting">Connecting merchants</a></li>
+            <!-- <li><a href="#contact">contactUs</a></li> -->
+            
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+
+    <section id="introduction">
+            <div class="content">
+                <h2>How it works?</h2>
+                <p>First, the value of the asset being auctioned is ascertained and a floor price — the minimum amount that will be acceptable by the seller — is worked out. Then, those interested in participating have to register themselves on the seller's online platform. Thereafter, earnest money is collected from the shortlisted buyers.</p>
+            </div>
+            <img src="../images/guide.png">
+    </section>
+    <section id="WhoWeAre">
+        <div class="content">
+            <h2>Who we are?</h2>
+            <p>Online auction technologies are revolutionizing the way we conduct business online. However, the proliferation of auction related research and the development of new auction security techniques are often limited by the uncooperative behaviour of the major online auctioneers. Due to the limited availability of quality auction data and literature on online auction software design, we have created our own online auction server to facilitate auction research. This paper describes our experiences with designing online auction software. We present a basic online model upon which more sophisticated auction scenarios can be crafted. We address website design, preliminary security, the database schema, transaction and timing issues, and also show how software bidding agents can interact with the model. Our model is grounded in object oriented techniques and is open source so that other researchers can expand upon our approach.</p>
+        </div>
+        <img src="../images/guide.png">
+</section>
+    <section id="procedure">
+        <!--Take the idea of flowchart from eAuction.gov.in-->
+            <div class="content">
+                <h2>Procedure</h2>
+                <p>Firstly,users need to have account either for bidding or auctioning.Secondly, depends on purpose of registering ,visit want_to_auction to auction a product and to bidd visit explore_auction .In want_to_auction you can add product details with image and can set it's base_price .If you want to bidd , in explore_auction,we classified auctions depend upon timing.In present auction all the products which are available for bidding ,is present , where you can bidd.In past_auction you can check the partiular product auction winner.</p>
+            </div>
+            <img src="../images/guide.png">
+    </section>
+    <section id="connecting">
+        <div class="content">
+            <h2>Connecting merchants</h2>
+            <p>After completion of particular auction we help to connect auctioner and winner by sending details of auctioner to winner and vice-versa and they proceed further for transaction.</p>
+        </div>
+        <img src="../images/guide.png">
+    </section>
+
+    <!-- <section id="contct"> -->
+        <!--  <div class="content">
+            <h2>faq</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nostrum itaque. Officiis facilis perspiciatis dolore harum. Cum repudiandae sit quibusdam! Quam quo officia eum? Ipsa iste ratione est sit et!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate inventore officia minus unde, blanditiis aspernatur dolore error delectus distinctio perspiciatis culpa eligendi repellat ut laborum nesciunt, nulla obcaecati vero porro.</p>
+        </div>
+        <img src="../images/guide.png"> -->
+        <!-- <h2>Contact us</h2>
+        <ul class="info">
+            <li>
+                <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                <span>3-5-1026, Narayanguda Rd, Hari Vihar Colony, <br/>
+                    Bhawani Nagar, Narayanguda,<br/>
+                    Telangana 500029.</span>
+            </li>
+            <li>
+                <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                <p><a href="tel:9807652345">+91 9807652345</a><br/>
+                <a href="tel:7652345690">+91 7652345690</a></p>
+            </li>
+            <li>
+                <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                <p><a href="mailto:helloworld@email.com">helloworld@email.com</a></p>
+            </li>
+        </ul>  -->
+    <!-- </section> -->
+    </form>
+
+    <script type="text/javascript">
+        function toggle(){
+            var header = document.getElementById("header");
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

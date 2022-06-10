@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Auction</title>
+    <link rel="stylesheet" href="/css/shiv.css">
+</head>
+<body>
+
+    <div class="total">
+        <div class="topa">
+            <div class="topar"><img src="/images/imo.png" alt="nothing"></div>
+            <div class="topal">
+                <div class="topal1"><img src="/images/eAuction logo.png" alt="nothing"></div>
+            </div>
+        
+        </div>
+        
+        <div class="topb">
+          <div class="nav">
+            <ul>
+                <li ><a href="#" >Expolre Auction</a></li>
+               
+                <li ><a href ="/wanttoauction">Want to auction</a></li>
+                <li><a href="/home">Home</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom">
+            <div class="bottombot">
+                <div class="present">
+                    <h3>Present Auctions</h3>
+                    <table id="mytable0" >
+                        <tr>
+                            <th style="border-left:1px solid gray;" name ="rows">CODE</th>
+                            <th>Name</th>
+                            <th >Started</th>
+                            <th class="du">Duration</th>
+                            <th style="border-right:1px solid gray;" class="en">Ends</th>
+                            <th>Bidd</th>
+                           
+                        </tr>
+
+                    </table>
+                    
+     
+                </div>
+                <div class="upcoming">
+                    <h3>Upcoming Auctions</h3>
+                   
+                        <table id = "myclass2">
+                        <tr>
+                            <th>CODE</th>
+                            <th>Name</th>
+                            <th>Starts</th>
+                            <th>Starts In</th>
+                            <th>Ends</th>
+                            
+                        </tr>
+                        <% if(records.use!=null) { %>
+                        <% records.use.forEach(function(item){ %>
+                           
+                        <% for(var i = 0 ; i< item.auction.length ; i++){ %>
+                        <tr>
+                            <td>SNACKB22</td>
+                            <td><%= item.auction[i].name%></td>
+                            <td><%= item.auction[i].start%></td>
+                            <td></td>
+                            <td><%= item.auction[i].end%></td></td>
+                        </tr>
+                        <% } %>
+
+                        <% }) %>
+                        </table>
+                        <% } %>
+                    
+
+                </div>
+                <div class="previous">
+                    <h3>Previous Auctions</h3>
+                    <table id="mytable1">
+                        <tr>
+                            <th>CODE</th>
+                            <th>Name</th>
+                            <th>Started</th>
+                            <th>Ended</th>
+                            <th>Winner</th>
+                           
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            
+                <div class="container">
+                  <div class="section aboutUs">
+                      <h2> About us</h2>
+                      <p>Lorem ipsum dolor sit amet consectet</p>
+                      <ul class="socialSites">
+                          <li><a href=""><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                          <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                          <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                          <li><a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                      </ul>
+                  </div>
+                  <div class="section quickLinks">
+                      <h2>Quick Links</h2>
+                      <ul>
+                          <li><a href="">Home</a></li>
+                          <li><a href="">FAQ</a></li>
+                          <li><a href="">Privacy Policy</a></li>
+                          <li><a href="">Help</a></li>
+                          <li><a href="">Terms and Conditions</a></li>
+                          <li><a href="">Contact Us</a></li>
+                      </ul>
+                  </div>
+                  <div class="section Auctions">
+                      <h2>Bid on..</h2>
+                      <ul>
+                          <li><a href="">Antique Products</a></li>
+                          <li><a href="">Vehicles</a></li>
+                          <li><a href="">Services</a></li>
+                          <li><a href="">Players</a></li>
+                      </ul>
+                  </div>
+                  <div class="section contactUs">
+                      <h2>Contact Us</h2>
+                      <ul class="info">
+                          <li>
+                              <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                              <span>3-5-1026, Narayanguda Rd, Hari Vihar Colony, <br/>
+                                  Bhawani Nagar, Narayanguda,<br/>
+                                  Telangana 500029.</span>
+                          </li>
+                          <li>
+                              <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                              <!-- <p><a href="tel:9807652345">+91 9807652345</a><br/>
+                              <a href="tel:7652345690">+91 7652345690</a></p> -->
+                          </li>
+                          
+                      </ul>
+                  </div>
+              </div>
+              
+        </footer>
+    </div>
+    <script src ="/script/script1.js">
+    </script>
+</body>
+</html>

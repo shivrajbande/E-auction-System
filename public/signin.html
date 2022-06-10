@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link href="./css/signin.css" rel="stylesheet">
+    <script>
+     const ele = document.getElementById("username").value;
+     val = 56;
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <form action="/signin" method="post">
+            <h1>Sign in</h1>
+            <input type="text" placeholder="Username" id="username" name="name" required >
+            <br>
+            <input type="email" placeholder="email" id="usernames" name="email" required>
+            <br>
+           
+            <input type="password" placeholder="Password" id="Password" name="password" required>
+            <br>
+           
+            <p id="write" style= "font-size: 12px; color: red;"></p>
+            <br>
+           
+            <input type="submit" name="submit" id="submit" style="cursor: pointer;">
+            
+            </form>
+        </div>
+        <div class="right">
+            <img src="./images/web1.png" alt="ntg">
+            <p><a href="/" style="font-size: 10px; text-decoration: none;">Create Account</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
