@@ -5,7 +5,7 @@ Follow these steps to get this project to run on you local machine for developme
 # Installation
 1 . Clone the repository <br />
     <pre>
-    git clone https://github.com/shivrajbande/Eauction-Web-App
+    git clone https://github.com/shivrajbande/eauction
     </pre>
     Move to /eAuction directory and enter these on the terminal <br />
     <pre>
